@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DosNumeros.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="20,30,20,20" Padding="30,0" VerticalOptions="Center">
+
+           
+            <Image Source="numeros.png" HeightRequest="300" HorizontalOptions="Center"/>
+
+
+            <Label Text="Numero 1" TextColor="DimGray" FontSize="10"/>
+            <Entry x:Name="datoA" Placeholder="Digite un número" Keyboard="Numeric"/>
+
+            <Label Text="Numero 2" TextColor="DimGray" FontSize="10"/>
+            <Entry x:Name="datoB" Placeholder="Digite un número" Keyboard="Numeric"/>
+
+            <Button
+                x:Name="Calcular" Text="Calcular" TextColor="Bisque" BackgroundColor="DarkSlateGray" BorderColor="Bisque" 
+                BorderWidth="2" CornerRadius="20"  Clicked="Button_Clicked" HorizontalOptions="Center"  WidthRequest="100" HeightRequest="80"/>
+
+            <Label Text="Resultado" TextColor="DimGray" FontSize="10"/>
+            <Entry x:Name="resultado" Placeholder="0" TextColor="LightPink" IsEnabled="False"  FontAttributes="Bold"
+                   FontSize="10" />
+    
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
